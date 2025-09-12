@@ -15,7 +15,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title> 岛</title>
+      <title>Tag: 随笔 |  岛</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -56,59 +56,7 @@
     
       
     <main class="content on">
-      
-<section class="cover">
-    
-      
-      <a class="forkMe" href="https://github.com/Shen-Yu/hexo-theme-ayer"
-        target="_blank"><img width="149" height="149" src="/images/forkme.png"
-          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-    
-  <div class="cover-frame">
-    <div class="bg-box">
-      <img src="/images/cover1.jpg" alt="image frame" />
-    </div>
-    <div class="cover-inner text-center text-white">
-      <h1><a href="/">岛</a></h1>
-      <div id="subtitle-box">
-        
-        <span id="subtitle"></span>
-        
-      </div>
-      <div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="cover-learn-more">
-    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
-  </div>
-</section>
-
-
-
-<script src="https://cdn.staticfile.org/typed.js/2.0.12/typed.min.js"></script>
-
-
-<!-- Subtitle -->
-
-  <script>
-    try {
-      var typed = new Typed("#subtitle", {
-        strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
-        startDelay: 0,
-        typeSpeed: 200,
-        loop: true,
-        backSpeed: 100,
-        showCursor: true
-      });
-    } catch (err) {
-      console.log(err)
-    }
-  </script>
-  
-<div id="main">
-  <section class="outer">
+      <section class="outer">
   
   <ul class="ads">
     
@@ -127,302 +75,55 @@
 </ul>
   
   
-  
-
-<div class="notice" style="margin-top:50px">
-    <i class="ri-heart-fill"></i>
-    <div class="notice-content" id="broad"></div>
-</div>
-<script type="text/javascript">
-    fetch('https://v1.hitokoto.cn')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("broad").innerHTML = data.hitokoto;
-        })
-        .catch(console.error)
-</script>
-
-<style>
-    .notice {
-        padding: 20px;
-        border: 1px dashed #e6e6e6;
-        color: #969696;
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        background: #fbfbfb50;
-        border-radius: 10px;
-    }
-
-    .notice i {
-        float: left;
-        color: #999;
-        font-size: 16px;
-        padding-right: 10px;
-        vertical-align: middle;
-        margin-top: -2px;
-    }
-
-    .notice-content {
-        display: initial;
-        vertical-align: middle;
-    }
-</style>
-  
   <article class="articles">
     
     
+    <h1 class="page-type-title">归档</h1>
     
     
-    <article
-  id="post-线性表"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2025/09/12/%E7%BA%BF%E6%80%A7%E8%A1%A8/"
-    >线性表</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2025/09/12/%E7%BA%BF%E6%80%A7%E8%A1%A8/" class="article-date">
-  <time datetime="2025-09-12T09:33:55.430Z" itemprop="datePublished">2025-09-12</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1><h3 id="线性表的定义"><a href="#线性表的定义" class="headerlink" title="线性表的定义"></a>线性表的定义</h3><p>线性表是一种基本的数据结构，它包含一系列的数据元素，这些元素之间存在一对一的顺序关系。线性表可以有多种不同的存储结构，如<strong>顺序存储</strong>结构和<strong>链式存储结构</strong>，每种结构都有其特定的操作方法和适用场景。</p>
-<h3 id="线性表的顺序存储"><a href="#线性表的顺序存储" class="headerlink" title="线性表的顺序存储"></a>线性表的顺序存储</h3><h5 id="线性表的顺序存储结构"><a href="#线性表的顺序存储结构" class="headerlink" title="线性表的顺序存储结构"></a>线性表的顺序存储结构</h5><p>在定义一个线性表时，需要先定义一个数组来存储线性表中所有元素，并定义一个整型变量来存储线性表的长度。以下代码定义了一个顺序表：<strong>sqlist</strong> L;</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> Maxsize 10</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> Elemtype;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">sqList</span>&#123;</span></span><br><span class="line">	Elemtype data[Maxsize];</span><br><span class="line">	<span class="type">int</span> length;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure> 
-      <a class="article-more-link" href="/2025/09/12/%E7%BA%BF%E6%80%A7%E8%A1%A8/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
   
-</article>
-
-    
-    <article
-  id="post-about"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
+  
+  
+  
+  
+  
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="/archives/2025" class="archive-year">2025</a>
+    </div>
+    <div class="archives">
+      
+      <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2025/09/12/about/" class="archive-article-date">
+  <time datetime="2025-09-12T09:33:55.414Z" itemprop="datePublished">09/12</time>
+</a>
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2025/09/12/about/"
+  <a class="archive-article-title" href="/2025/09/12/about/"
     >About Me</a> 
 </h2>
  
 
-      
     </header>
-     
-    <div class="article-meta">
-      <a href="/2025/09/12/about/" class="article-date">
-  <time datetime="2025-09-12T09:33:55.414Z" itemprop="datePublished">2025-09-12</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-  </div>
- 
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <blockquote>
-<p>A developer, live in Guizhou, China.</p>
-</blockquote>
-<p> 姓名：徐梦铃</p>
-<p> QQ: 298424075</p>
-<p> 微信：Qw15935726840As</p>
-<p> github:<a target="_blank" rel="noopener" href="https://github.com/dashboard">Dashboard</a></p>
-<p> gitee:<a target="_blank" rel="noopener" href="https://gitee.com/qw_28_0">Admin</a></p> 
-      <a class="article-more-link" href="/2025/09/12/about/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
     
-
-    <!-- copyright -->
     
-    <footer class="article-footer">
-       
+      
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag">随笔</a></li></ul>
 
-    </footer>
+    
   </div>
-
-   
-   
-  
 </article>
-
-    
-    <article
-  id="post-hello-world"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2025/09/12/hello-world/"
-    >Hello World</a> 
-</h2>
- 
-
       
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2025/09/12/hello-world/" class="article-date">
-  <time datetime="2025-09-12T08:44:11.653Z" itemprop="datePublished">2025-09-12</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
- 
-      <!-- reward -->
       
     </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
   </div>
-
-   
-   
   
-</article>
-
-    
-    <article
-  id="post-栈和队列"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2025/09/10/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/"
-    >栈和队列</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2025/09/10/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" class="article-date">
-  <time datetime="2025-09-09T23:26:36.000Z" itemprop="datePublished">2025-09-10</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h2 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h2><h4 id="什么是栈？"><a href="#什么是栈？" class="headerlink" title="什么是栈？"></a>什么是栈？</h4><p><strong>栈的定义</strong>：栈（Stack）是一种<strong>运算受限的线性表</strong>，只允许在一端进行插入或删除操作。这一端被称为<strong>栈顶</strong>（Top），相对地，另一端称为<strong>栈底</strong>（Bottom）。栈的特点是<strong>后进先出</strong>（Last In First Out，简称 LIFO），即最后插入的元素最先被删除。如下图：</p>
-<p><img src="https://c.biancheng.net/uploads/allimg/190426/1I203KK-1.gif"></p>
-<h4 id="栈的存储结构"><a href="#栈的存储结构" class="headerlink" title="栈的存储结构"></a>栈的存储结构</h4><p>与线性表类似，栈的存储结构也分为两种，即<strong>顺序存储</strong>和<strong>链式存储</strong>，顺序存储的栈称为顺序栈，链式存储的栈称为链式栈 
-      <a class="article-more-link" href="/2025/09/10/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-  </article>
   
 
   
 </section>
-</div>
-
       <footer class="footer">
   <div class="outer">
     <ul>
